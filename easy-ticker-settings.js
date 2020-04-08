@@ -1,3 +1,3 @@
-$('.news-ticker').easyTicker({
+$('.news-wrapper').easyTicker({
 	// list of properties
 });
