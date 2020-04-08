@@ -4,12 +4,12 @@
 */
 
 jQuery(function($){
-	var targetels= ['h1', 'h2', 'h3', '.customheader']
-	var outputdivid = 'tocbox' // id of empty element to house TOC links
+	var targetels= ['h4', '.customheader']
+	var outputdivid = 'text-anchors' // id of empty element to house TOC links
 	var headerlength = 70 // max length of each header link
 	var trailingmark = '...' // trailing text to add to each of header link if necessary
 	var animated = true // animate scrolling?
-	var uloutput = '<ul class="tableofcontents">\n' // UL and classname to use for the generated TOC container
+	var uloutput = '<ul class="toc-link">\n' // UL and classname to use for the generated TOC container
 
 	var $output = $('#' + outputdivid)
 	var $headers = $(targetels.join(', '))
